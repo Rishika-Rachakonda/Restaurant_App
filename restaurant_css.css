@@ -1,0 +1,74 @@
+/*universal styles*/
+*{
+    font-family: 'Noto Emoji', sans-serif;
+}
+/*nav bad*/
+.nvve{
+    background-color:rgb(239,172,53,.25) ; 
+    
+}
+/*headre*/
+header{
+    background-image: url(https://previews.123rf.com/images/tan4ikk/tan4ikk1506/tan4ikk150600170/41508966-french-cuisine-collage-different-types-of-cheese-wine-and-other-ingredients-on-a-wooden-table.jpg);
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    width: 100%;
+}
+/*title of header*/
+.title{
+    background-color:rgb(239,172,53) ;
+    
+}
+.title h1{
+    color: white;
+    text-shadow: 2px 2px 2px wheat;
+}
+/*banner*/
+.banner{
+    position: absolute;
+    background-color: rgb(239,172,53);
+    bottom: -30px;
+    border: 5px solid white;
+    border-radius: 15px;
+    color:white;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/*equal height to each image of card*/
+.card-img-top{
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+
+}
+
+/*horixontal card*/
+.h_card{
+    background-color: rgb(239,172,53,.75);
+    color: azure;
+}
+/*background image for main*/
+.main{
+    background-image: url();
+    background-color: rgb(239,172,53,.25) ;
+    
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+/*footer*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: beige;
+    padding: 5px;
+}
+.imgn{
+    border-radius: 50%;
+}

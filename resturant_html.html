@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Emoji&family=Nunito:wght@200&family=PT+Sans&family=Quicksand:wght@300&family=Rubik+Moonrocks&family=Satisfy&family=Shadows+Into+Light&family=Smooch&family=Smooch+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
+rel="stylesheet" 
+integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
+crossorigin="anonymous">
+<link rel="stylesheet" href="./restaurant_css.css">
+    <title>Restaureant app</title>
+    <link rel="shortcut icon " href="https://media.istockphoto.com/vectors/restaurant-food-drinks-logo-fork-knife-background-vector-image-vector-id981368726?k=20&m=981368726&s=612x612&w=0&h=Um4YOExWlUgOfpUs2spnN0NrrXs-M71OUuUMbStVFNQ=">
+</head>
+<body>
+    
+
+<!--navigation bar-->
+<nav class="navbar navbar-expand-lg bg-light ">
+    <div class="container-fluid nvve">
+      <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-utensils"></i>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Restaurant</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link">Aboutus</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<!--header-->
+<header>
+    <div class="content p-3">
+        <div class="border rounder mb-3 px-3 title ">
+        <!--title-->
+        <h1 class="display-5 fw-bold text-dark">Beau Resto</h1>
+        <p>All the way from france.</p>
+        </div>
+        <img src="https://previews.123rf.com/images/tan4ikk/tan4ikk1508/tan4ikk150800038/43021456-breakfast-of-cheese-milk-bread-and-eggs-on-a-light-wooden-background.jpg" alt="" class="rounded-circle d-none d-sm-block" width="300px" height="300px">
+        <!--banner-->
+        <div class="w-50 mx-auto banner text-center display-6">Nourriture Délicieuse.</div>
+    </div>
+</header>
+<!--main content-->
+<div class="container main my-5">
+    <!--grid of cards-->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 my-5 gy-5">
+        <!--coloumn1-->
+      <!--col -->
+        <div class="col">
+            <div class="card">
+                <img src="https://www.makingthymeforhealth.com/wp-content/uploads/2016/02/Vegan-Mushroom-Bourguignon-500x500.jpg" alt="" class="w-100 card-img-top">
+                <div class="card-body text-center">
+                    <h1 class="dish-name"> Vegetarian Bourguignon
+                    </h1>
+                    <p>French dish cooked with pieces of beef simmered in red wine with root vegetables such as carrots, green beans and mushrooms.</p>
+                    <button class="btn btn-outline-warning" data-bs-target="#id1"  data-bs-toggle="collapse">Customize</button>
+                        <!--content to be collapsed-->
+                        <div class="collapse" id="id1">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="#">Disabled</a>
+                            </li>
+                          </ul>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--colomun2-->
+        <!--col-->
+        <div class="col">
+            <div class="card" >
+                <img src="data:image/jpeg;base64,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" alt="" class="w-100 card-img-top">
+                <div class="card-body text-center">
+                    <h1 class="dish-name">Sauerkraut Pie</h1>
+                    <p>Sauerkraut is a flagship dish of Alsatian cuisine. It is also made into pies in that region. If, iIn its traditional version,is little modified and substitues are there are butter.tofu, plant milk or starch soup.</p>
+                    <button class="btn btn-outline-warning" data-bs-target="#id2" data-bs-toggle="collapse" >Customize</button>
+                        <!--content to be collapsed-->
+                        <div class="collapse" id="id2">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="#">Disabled</a>
+                            </li>
+                          </ul>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--coloumn 3-->
+        <!--col-->
+        <div class="col">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbCHgY8Ft4FJbhldEg9Di01K5uxa_hVhHYUA&usqp=CAU" alt="" class="w-100 card-img-top">
+                <div class="card-body text-center">
+                    <h1 class="dish-name">Aligot</h1>
+                    <p>This French dish is  very popular in Aveyron as well. It is made with potatoes, fresh tome, a closed and unsalted curd cheese made from cow’s milk and the whole preparation is flavored with garlic.</p>
+                    <button class="btn btn-outline-warning" data-bs-target="#id3" data-bs-toggle="collapse">Customize</button>
+                        <!--content to be collapsed-->
+                        <div class="collapse" id="id3">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="#">Disabled</a>
+                            </li>
+                          </ul>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--coloumn4-->
+        <div class="col">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZsBgFCDI9j2h0AmBd9TGh_DRHrXEc-xSP3A&usqp=CAU" alt="" class="w-100 card-img-top">
+                <div class="card-body text-center">
+                    <h1 class="dish-name">Rolled omelet with fine herbs</h1>
+                    <p>This is a quick recipe that only requires few ingredients such as eggs, herbs and butter. For a soft omelet eggs by replacing with milk.</p>
+                    <button class="btn btn-outline-warning" data-bs-target="#id4" data-bs-toggle="collapse">Customize</button>
+                        <!--content to be collapsed-->
+                        <div class="collapse" id="id4">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="#">Disabled</a>
+                            </li>
+                          </ul>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--comolum5-->
+        <div class="col">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn3ZbTUTT5cFJPmyZLZr3R3Yg7ieVQErORxg&usqp=CAU" alt="" class="w-100 card-img-top">
+                <div class="card-body text-center">
+                    <h1 class="dish-name">Leek gratin</h1>
+                    <p>It’s a staple for dishes that keep you warm in winter. It is made with leeks dipped in a bechamel sauce and baked in the oven with cheese.it is a tast dish with alot of flavours and nice aroma</p>
+                    <button class="btn btn-outline-warning" data-bs-target="#id5" data-bs-toggle="collapse">Customize</button>
+                        <!--content to be collapsed-->
+                        <div class="collapse" id="id5">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="#">Disabled</a>
+                            </li>
+                          </ul>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--coloumn6-->
+        <div class="col">
+            <div class="card">
+                <img src="https://images-gmi-pmc.edge-generalmills.com/4dcf3334-4d88-4653-8a0c-d5bc0bbee7ed.jpg" alt="" class="w-100 card-img-top">
+                <div class="card-body text-center">
+                    <h1 class="dish-name">Gratin dauphinois</h1>
+                    <p>Gratin dauphinois is made with potatoes, milk, crème fraîche, garlic and, nutmeg for extra flavor, is grilled in the oven.</p>
+                    <button class="btn btn-outline-warning" data-bs-target="#id6" data-bs-toggle="collapse">Customize</button>
+                        <!--content to be collapsed-->
+                        <div class="collapse" id="id6">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="#">Disabled</a>
+                            </li>
+                          </ul>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--colunm 7-->
+        <div class="col">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyehvz9gMh9gopCu6wV617T3TPJ7kwo3pFSA&usqp=CAU" alt="" class="w-100 card-img-top">
+                <div class="card-body text-center">
+                    <h1 class="dish-name">Feta, Pesto and Asparagus Flammekuche</h1>
+                    <p>Flammekueche is from thick bread dough covered with crème fraîche</p>
+                    <button class="btn btn-outline-warning" data-bs-target="#id7" data-bs-toggle="collapse">Customize</button>
+                        <!--content to be collapsed-->
+                        <div class="collapse" id="id7">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="#">Disabled</a>
+                            </li>
+                          </ul>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--coloumn8-->
+        <div class="col">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYpL-_6bq0Zqy4dGh_pgBI4CP-wfIlP2ZpBA&usqp=CAU" alt="" class="w-100 card-img-top .d-none .d-sm-block">
+                <div class="card-body text-center">
+                    <h1 class="dish-name">Vegan cassoulet
+                    </h1>
+                    <p> with smoked tofu and plant-based sausages like the Viennese sausages from taifun is famous french recipie with alot of flavors </p>
+                    <button class="btn btn-outline-warning" data-bs-target="#id8" data-bs-toggle="collapse">Customize</button>
+                        <!--content to be collapsed-->
+                        <div class="collapse" id="id8">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="#">Disabled</a>
+                            </li>
+                          </ul>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+      </div>
+</div>
+<!--horizontal card-->
+<div class="card my-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="https://st2.depositphotos.com/5510056/10121/i/600/depositphotos_101214240-stock-photo-cuisine-of-different-countries.jpg" alt="great thali" class="w-100" >
+    </div>
+    <div class="col-sm-8 d-flex align-items-center  h_card">
+      <p class="lead">French cooking is considered by many to be the most prestigious and respectable cuisine in the world. With its formal techniques, emphasis on fresh ingredients and simple flavors, pride in presentation, and rich and colorful history, French cuisine truly has come to rule the world, laying the foundations for many other styles and specialties.</p>
+    </div>
+  </div>
+</div>
+<!--items carousel-->
+<div class="carousel slide my-2 .d-none .d-sm-block m-5" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="1500">
+      <img src="https://mindfulfeet.com/wp-content/uploads/2021/02/french-dishes-vegetarian.jpg" alt="" class="w-50 couresal mx-auto d-block">
+    </div>
+    <div class="carousel-item active" data-bs-interval="1500">
+      <img src="https://www.discoverwalks.com/blog/wp-content/uploads/2021/12/screen-shot-2021-12-01-at-12.07.34-pm.png" alt="" class="w-50 couresal mx-auto d-block">
+    </div>
+    <div class="carousel-item active" data-bs-interval="1500">
+      <img src="https://mindfulfeet.com/wp-content/uploads/2021/02/french-vegetarian-traditional-dishes-flammkuche.jpg" alt="" class="w-50 couresal mx-auto d-block">
+    </div>
+  </div>
+</div>
+<!--footer-->
+<footer>
+    <div class="address">
+        <div class="lead">
+            <p>Karimnagr</p>
+            <p>9988773021</p>
+            <p>Telangana</p>
+        </div>
+    </div>
+    <div class="imgn d-none d-sm-block">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Armoiries_r%C3%A9publique_fran%C3%A7aise.svg/800px-Armoiries_r%C3%A9publique_fran%C3%A7aise.svg.png" alt="" 
+        d-none d-sm-block
+        width="200px" height="200px"
+        style="border-radius: 50%;">
+    </div>
+    <div class="address">
+        <div class="lead">
+            <p>Jubliee Hills</p>
+            <p>9988773020</p>
+            <p>Hyderabad</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+crossorigin="anonymous">
+</script>
+</body>
+</html>
